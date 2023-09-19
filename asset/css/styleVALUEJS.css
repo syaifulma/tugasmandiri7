@@ -133,7 +133,7 @@ section#box-profile{
 
 .description{
     position: relative;
-    width: 400px;
+    width: 300px;
     display: inline-block;
     float: left;
     top: 50px;
@@ -161,7 +161,7 @@ section#box-profile{
     float: left;
     font-family: 'Helvetica', sans-serif;
     top: 45px;
-    margin-left: 30px;
+    margin-left: 10px;
 }
 
 .information .data{

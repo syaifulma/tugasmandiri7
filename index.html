@@ -27,7 +27,7 @@
 
         <section id="box-profile">
             <div class="img-profile">
-                <div class="photo" style="background-image: url(file:///Users/swijaya/Downloads/WFDB2/portfoliotm6/asset/image/download.jpeg)">
+                <div class="photo" style="background-image: url(asset/image/download.jpeg)">
                 </div>
             </div>
             <div class="description">
@@ -180,8 +180,44 @@
             }
             
             function simpanForm(){
+                
+
+                formMenu.addEventListener("submit", (e) => {
+                    e.preventDefault();
+                   
+                    var input_name = document.getElementById("inpName").value;
+                    var input_name = document.getElementById("inpName").value;
+                    var input_role = document.getElementById("inpRole").value;
+                    var input_available = document.getElementById("inpAvailability").value;
+                    var input_usia = document.getElementById("inpUsia").value;
+                    var input_lokasi = document.getElementById("inpLokasi").value;
+                    var input_experience = document.getElementById("inpYears").value;
+                    var input_email = document.getElementById("inpEmail").value;
+
+
+                    document.getElementById("pName").innerHTML = input_name;
+                    document.getElementById("pRole").innerHTML = input_role;
+                    document.getElementById("pAvailable").innerHTML = input_available;
+                    document.getElementById("pAge").innerHTML = input_usia;
+                    document.getElementById("pLocation").innerHTML = input_lokasi;
+                    document.getElementById("pExperience").innerHTML = input_experience;
+                    document.getElementById("pEmail").innerHTML = input_email;
+
+                    formMenu.style.display = "none";
+
+                });
+
+                
+
+                
+
+                
+
+                console.log(input_name);
 
             }
+
+            
 
             function showMenu()
             {
